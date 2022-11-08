@@ -13,16 +13,13 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_standard"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/collect_app_name"
-            android:src="@drawable/odk_logo"
+            app:layout_constraintBottom_toTopOf="@+id/center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_ucs" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/center"
@@ -134,5 +131,6 @@
             android:layout_height="wrap_content"
             android:visibility="visible"
             app:constraint_referenced_ids="dont_have_server,try_collect" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -79,7 +79,7 @@ the specific language governing permissions and limitations under the License.
     <application
         android:name=".application.Collect"
         android:allowBackup="true"
-        android:icon="@drawable/notes"
+        android:icon="@drawable/ic_notes_ucs"
         android:installLocation="auto"
         android:label="@string/collect_app_name"
         android:largeHeap="true"
